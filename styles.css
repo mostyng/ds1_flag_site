@@ -1,0 +1,516 @@
+/*
+ This is my very first SCSS experiment
+*/
+
+@font-face
+{
+    font-family: 'Migrant';
+
+    src: url('migrant.otf');
+}
+
+*
+{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body
+{
+    font-family: 'Migrant', sans-serif;
+    background-color: black;
+    transition: 1s ease-in-out;
+}
+
+/*.landing{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 0 0;
+  margin: 0 auto;
+  background: yellow;
+}*/
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.uberButton{
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 100;
+  position: absolute;
+  cursor: pointer;
+}
+
+.flagSmall{
+  display: flex;
+  justify-content: space-around;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    height: 75vh;
+    background-color: yellow;
+    background-blend-mode: multiply;
+
+}
+
+#map, #pano {
+      position: absolute;
+      z-index: -1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+/*    filter: blur(8px);*/
+      opacity: 0;
+}
+
+#map.appear{
+  opacity: 1;
+}
+#pano.appear{
+  opacity: 1;
+}
+
+.wavetext.disappear{
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.summButton{
+
+}
+
+.summary{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  display: none;
+}
+
+.summary p{
+  font-size: 2.2vw;
+  width: 80%;
+}
+
+.close{
+  width: 5%;
+  height: 5%;
+  display: none;
+  position: absolute;
+  bottom: 10%;
+  right: 3%;
+  background: url(exit.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
+}
+
+.close.appear{
+  display: block;
+}
+
+
+.summary.appear{
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.landing{
+  position: absolute;
+  background-color: yellow;
+}
+
+.push{
+  background-color: blue;
+  -webkit-animation: dip 1s 1 linear;
+}
+
+.location{
+  opacity: 0;
+}
+
+.appear{
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.flagContain
+{
+    width: 100%;
+    height: 100%;
+}
+
+.bgAnimation
+{
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    -webkit-animation: slide 1s infinite linear;
+
+    background: url(flag_wave_3.svg) repeat round;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    pointer-events: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently*/
+}
+
+@-webkit-keyframes slide
+{
+    from
+    {
+        background-position: 0 0;
+    }
+    to
+    {
+        background-position: 75vw 0;
+    }
+}
+
+@-webkit-keyframes dip
+{
+    from
+    {
+        left: 0;
+    }
+    to
+    {
+        left: -100vw;
+    }
+}
+
+@keyframes wave
+{
+    from
+    {
+        transform: translateY(0);
+    }
+    to
+    {
+        transform: translateY(15vh);
+    }
+}
+
+
+.wavetext
+{
+    font-size: 6vw;
+
+    display: flex;
+
+    width: 100%;
+    height: 70%;
+
+    text-align: center;
+
+    color: black;
+
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently*/
+
+}
+
+.wavetext span
+{
+    display: inline-block;
+
+    animation-name: wave;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    pointer-events: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently*/
+
+
+}
+
+.wavetext :nth-child(40n + 0)
+{
+    animation-delay: -.6s;
+}
+
+.wavetext :nth-child(40n + 1)
+{
+    animation-delay: -.585s;
+}
+
+.wavetext :nth-child(40n + 2)
+{
+    animation-delay: -.57s;
+}
+
+.wavetext :nth-child(40n + 3)
+{
+    animation-delay: -.555s;
+}
+
+.wavetext :nth-child(40n + 4)
+{
+    animation-delay: -.54s;
+}
+
+.wavetext :nth-child(40n + 5)
+{
+    animation-delay: -.525s;
+}
+
+.wavetext :nth-child(40n + 6)
+{
+    animation-delay: -.51s;
+}
+
+.wavetext :nth-child(40n + 7)
+{
+    animation-delay: -.495s;
+}
+
+.wavetext :nth-child(40n + 8)
+{
+    animation-delay: -.48s;
+}
+
+.wavetext :nth-child(40n + 9)
+{
+    animation-delay: -.465s;
+}
+
+.wavetext :nth-child(40n + 10)
+{
+    animation-delay: -.45s;
+}
+
+.wavetext :nth-child(40n + 11)
+{
+    animation-delay: -.435s;
+}
+
+.wavetext :nth-child(40n + 12)
+{
+    animation-delay: -.42s;
+}
+
+.wavetext :nth-child(40n + 13)
+{
+    animation-delay: -.405s;
+}
+
+.wavetext :nth-child(40n + 14)
+{
+    animation-delay: -.39s;
+}
+
+.wavetext :nth-child(40n + 15)
+{
+    animation-delay: -.375s;
+}
+
+.wavetext :nth-child(40n + 16)
+{
+    animation-delay: -.36s;
+}
+
+.wavetext :nth-child(40n + 17)
+{
+    animation-delay: -.345s;
+}
+
+.wavetext :nth-child(40n + 18)
+{
+    animation-delay: -.33s;
+}
+
+.wavetext :nth-child(40n + 19)
+{
+    animation-delay: -.315s;
+}
+
+.wavetext :nth-child(40n + 20)
+{
+    animation-delay: -.3s;
+}
+
+.wavetext :nth-child(40n + 21)
+{
+    animation-delay: -.285s;
+}
+
+.wavetext :nth-child(40n + 22)
+{
+    animation-delay: -.27s;
+}
+
+.wavetext :nth-child(40n + 23)
+{
+    animation-delay: -.255s;
+}
+
+.wavetext :nth-child(40n + 24)
+{
+    animation-delay: -.24s;
+}
+
+.wavetext :nth-child(40n + 25)
+{
+    animation-delay: -.225s;
+}
+
+.wavetext :nth-child(40n + 26)
+{
+    animation-delay: -.21s;
+}
+
+.wavetext :nth-child(40n + 27)
+{
+    animation-delay: -.195s;
+}
+
+.wavetext :nth-child(40n + 28)
+{
+    animation-delay: -.18s;
+}
+
+.wavetext :nth-child(40n + 29)
+{
+    animation-delay: -.165s;
+}
+
+.wavetext :nth-child(40n + 30)
+{
+    animation-delay: -.15s;
+}
+
+.wavetext :nth-child(40n + 31)
+{
+    animation-delay: -.135s;
+}
+
+.wavetext :nth-child(40n + 32)
+{
+    animation-delay: -.12s;
+}
+
+.wavetext :nth-child(40n + 33)
+{
+    animation-delay: -.105s;
+}
+
+.wavetext :nth-child(40n + 34)
+{
+    animation-delay: -.09s;
+}
+
+.wavetext :nth-child(40n + 35)
+{
+    animation-delay: -.075s;
+}
+
+.wavetext :nth-child(40n + 36)
+{
+    animation-delay: -.06s;
+}
+
+.wavetext :nth-child(40n + 37)
+{
+    animation-delay: -.045s;
+}
+
+.wavetext :nth-child(40n + 38)
+{
+    animation-delay: -.03s;
+}
+
+.wavetext :nth-child(40n + 39)
+{
+    animation-delay: -.015s;
+}
+
+
+
+/*SMALL FLAG
+.flagContain
+{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: black;
+}
+
+.flagPole{
+  width: 2vw;
+  height: 90vh;
+  position: relative;
+  background-color: white;
+  margin-left: 15vw;
+}
+
+.bgAnimation
+{
+    box-sizing: border-box;
+    width: 600px;
+    height: 400px;
+
+    background-color: black;
+
+    -webkit-animation: slide 1s infinite linear;
+
+    text-align: center;
+
+    background: url(flag_landing.svg) repeat round;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+@-webkit-keyframes slide
+{
+    from
+    {
+        background-position: 0 0;
+    }
+    to
+    {
+        background-position: 600px 0;
+    }
+}*/
