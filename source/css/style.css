@@ -1,0 +1,321 @@
+body
+{
+    overflow: hidden;
+    background: #000;
+    color: white;
+}
+
+@font-face
+{
+    font-family: migrant;
+
+    src: url('../fonts/migrant.otf');
+}
+
+.flags_display
+{
+    font-family: migrant;
+
+    padding: 10pt 14pt;
+
+    text-transform: uppercase;
+}
+
+.flags_display h1
+{
+    font-size: 23pt;
+}
+
+.proposal
+{
+    font-family: migrant;
+    line-height: 40px;
+
+    max-width: 200px;
+    height: 40px;
+    padding: 0 20pt;
+
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.nav
+{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.name
+{
+    cursor: pointer;
+}
+
+.flags
+{
+    position: relative;
+
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.flag_hero
+{
+    width: 18vw;
+}
+
+.flag-one
+{
+    position: relative;
+
+    width: 19vw;
+    height: 12.71vw;
+    margin-top: calc(100pt - (5vw));
+    padding-left: 0;
+
+    /*background: url("../flags/1.png");*/
+    background-size: cover;
+}
+
+.flag-two
+{
+    position: relative;
+
+    width: 19vw;
+    height: 12.71vw;
+    margin-top: calc(200pt - (10vw));
+
+    /* background: url("../flags/3.png");*/
+     background-size: cover;
+}
+
+.flag-three
+{
+    position: relative;
+
+    width: 19vw;
+    height: 12.71vw;
+    margin-top: calc(300pt - (15vw));
+
+    /*background: url("../flags/2.png");*/
+     background-size: cover;
+}
+
+.flag-four
+{
+    position: relative;
+
+    width: 19vw;
+    height: 12.71vw;
+    margin-top: calc(400pt - (20vw));
+
+    /*background: url("../flags/4.png");*/
+     background-size: cover;
+}
+
+.flag_pole
+{
+    position: absolute;
+    top: 0vw;
+    left: -9pt;
+
+    min-width: 5pt;
+    min-height: 2000px;
+
+    color: black;
+    border: none;
+    background-color: white;
+}
+
+/*////////////////////////////////////
+flag thumbnail css
+////////////////////////////////////*/
+
+.bottom
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.flag_finder
+{
+    /*padding-bottom: 5pt;*/
+    overflow: hidden;
+
+    width: 100%;
+    max-height: 33pt;
+
+    cursor: pointer;
+    transition: all .6s;
+    /*margin-top: 2pt;*/
+
+    border-top: solid;
+    border-top-width: 2pt;
+    border-top-color: white;
+    background: black;
+}
+
+
+.flag_finder:hover
+{
+    max-height: 300pt;
+}
+
+.proposal
+{
+    position: absolute;
+    top: -1pt;
+    left: 5pt;
+
+    display: inline-block;
+
+    max-width: 5%;
+    padding: 3pt 8pt;
+
+    text-align: center;
+}
+
+.active
+{
+    background: black;
+}
+
+h5
+{
+    font-size: 14pt;
+
+    display: inline;
+
+    text-align: center;
+}
+
+.flag_group
+{
+    display: inline-block;
+
+    padding: 4pt 7pt 5pt 7pt;
+}
+
+.flag_group:hover
+{
+    background: white;
+}
+
+.flag_thumbnails
+{
+    position: relative;
+    top: 0;
+    left: 100pt;
+
+    cursor: pointer;
+    display: inline-block;
+
+    max-width: 90%;
+}
+
+.flag
+{
+    width: 30px;
+    height: 20px;
+}
+
+
+/*////////////////////////////////////
+flag animation
+////////////////////////////////////*/
+
+
+.flagContain
+{
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+}
+
+/*.flagPole{
+  width: 2vw;
+  height: 90vh;
+  position: relative;
+  background-color: white;
+  margin-left: 15vw;
+  }*/
+
+  .bgAnimation
+  {
+    position: absolute;
+
+    width: 100%;
+    height: 101%;
+
+    -webkit-animation: slide 1.2s infinite linear;
+
+    background: url(../1.png) repeat round;
+    /*border-style: solid;
+    border-width: 6px 0 6px 0;
+    border-color: red;
+    box-sizing: border-box;*/
+    background-color: transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@-webkit-keyframes slide
+{
+    from
+    {
+        background-position: 0 0;
+    }
+    to
+    {
+        background-position: 19vw 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px)
+{
+    .flags_display h1
+    {
+        font-size: 18pt;
+    }
+
+    .flag-one
+    {
+        margin-top: calc(50pt - (5vw));
+        width: 22vw;
+        height: 14.52vw;
+    }
+
+    .flag-two
+    {
+        margin-top: calc(150pt - (10vw));
+        width: 23vw;
+        height: 15.18vw;
+    }
+
+    .flag-three
+    {
+        margin-top: calc(250pt - (15vw));
+        width: 23vw;
+        height: 15.18vw;
+    }
+
+    .flag-four
+    {
+        margin-top: calc(350pt - (20vw));
+        width: 23vw;
+        height: 15.18vw;
+    }
+
+    .flag
+    {
+        width: 20px;
+        height: 13.2px;
+    }
+}
