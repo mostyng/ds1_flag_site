@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo with jQuery</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Demo project with jQuery">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style-min.css">
+</head>
+<body>
+	<section class="content">
+		<div class="flags_display">
+			<div class="nav">
+				<h1>DS1 Civic Flag Project</h1>
+				<h1 class="name">Flags By <span class="name_span">RISD</span></h1>
+			</div>
+			<div class="flags">
+				<div class="flag-one" style="background:url('../flags/1.png');background-size: cover;">
+					<div class="flag_pole"></div>
+					<div class="flagContain">
+						<div class="bgAnimation">
+						</div>
+					</div>
+				</div>
+				<div class="flag-two" style="background:url('../flags/2.png');background-size: cover;">
+					<div class="flag_pole"></div>
+					<div class="flagContain">
+						<div class="bgAnimation">
+						</div>
+					</div>
+				</div>
+				<div class="flag-three" style="background:url('../flags/3.png');background-size: cover;">
+					<div class="flag_pole"></div>
+					<div class="flagContain">
+						<div class="bgAnimation">
+						</div>
+					</div>
+				</div>
+				<div class="flag-four" style="background:url('../flags/4.png');background-size: cover;">
+					<div class="flag_pole"></div>
+					<div class="flagContain">
+						<div class="bgAnimation">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="bottom">
+			<section class="flag_finder">
+				<div class="proposal">
+					<h5>Proposals</h5>
+				</div>
+
+				<div class="flag_thumbnails">
+					<div class="flag_group top" id="flag-group-1" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-2" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-3" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-4" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-5" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-6" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-7" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-8" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-9" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-10" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-11" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-12" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-13" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-14" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-15" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-16" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-17" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-18" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-19" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-20" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-21" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-22" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-23" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-24" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-25" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-26" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-27" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-28" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-29" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-30" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-31" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-32" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-33" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-34" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-35" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-36" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-37" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-38" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-39" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-40" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-41" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-42" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-43" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-44" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-45" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-46" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-47" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-48" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-49" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-50" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-51" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-52" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-53" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-54" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-55" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-56" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-57" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-58" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-59" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-60" name="">
+						<img src="flags/test-1.jpg" alt="" class="flag">
+						<img src="flags/test-2.jpg" alt="" class="flag">
+						<img src="flags/test-3.jpg" alt="" class="flag">
+						<img src="flags/test-4.jpg" alt="" class="flag">
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="scripts/flag-min.js"></script>
+</body>
+</html>
