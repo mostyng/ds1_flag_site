@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DS1 Civic Flag Project</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Demo project with jQuery">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+	<section class="content">
+		<div class="flags_display">
+			<div class="nav">
+				<h1 class="home" onclick="pageReload()">DS1 Civic Flag Project</h1>
+				<h1 class="name">Flags By <span class="name_span">RISD</span></h1>
+			</div>
+			<div class="flags">
+				<div class="flag-one" style="background:url('flags/ds1_1.jpg');background-size: cover;background-position: center center; background-repeat:no-repeat;">
+					<div class="flag_pole"></div>
+					<div class="flagContain">
+						<div class="bgAnimation">
+						</div>
+					</div>
+				</div>
+				<div class="flag-two" style="background:url('flags/ds1_2.jpg');background-size: cover;background-position: center center; background-repeat:no-repeat;">
+					<div class="flag_pole"></div>
+					<div class="flagContain">
+						<div class="bgAnimation">
+						</div>
+					</div>
+				</div>
+				<div class="flag-three" style="background:url('flags/ds1_3.jpg');background-size: cover;background-position: center center; background-repeat:no-repeat;">
+					<div class="flag_pole"></div>
+					<div class="flagContain">
+						<div class="bgAnimation">
+						</div>
+					</div>
+				</div>
+				<div class="flag-four" style="background:url('flags/ds1_4.jpg');background-size: cover;background-position: center center; background-repeat:no-repeat;">
+					<div class="flag_pole"></div>
+					<div class="flagContain">
+						<div class="bgAnimation">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="bottom">
+			<section class="flag_finder">
+				<div class="proposal">
+					<h5>Proposals</h5>
+				</div>
+
+				<div class="flag_thumbnails">
+					<div class="flag_group top" id="flag-group-1" name="Carolyn Chen">
+						<img src="flags/flag-group-1/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-1/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-1/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-1/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-2" name="Ju Eun Jeon">
+						<img src="flags/flag-group-2/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-2/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-2/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-2/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-3" name="Madison Ledford">
+						<img src="flags/flag-group-3/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-3/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-3/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-3/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-4" name="Sara Park">
+						<img src="flags/flag-group-4/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-4/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-4/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-4/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-5" name="Ashley Bald">
+						<img src="flags/flag-group-5/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-5/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-5/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-5/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-6" name="Ben Sampson">
+						<img src="flags/flag-group-6/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-6/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-6/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-6/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-7" name="Brian Bailey">
+						<img src="flags/flag-group-7/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-7/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-7/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-7/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group top" id="flag-group-8" name="Catherine Habgood">
+						<img src="flags/flag-group-8/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-8/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-8/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-8/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-9" name="Christine Chiu">
+						<img src="flags/flag-group-9/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-9/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-9/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-9/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-10" name="David Iwanaga">
+						<img src="flags/flag-group-10/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-10/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-10/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-10/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-11" name="Gabriel Abascal">
+						<img src="flags/flag-group-11/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-11/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-11/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-11/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-12" name="Grace Young">
+						<img src="flags/flag-group-12/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-12/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-12/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-12/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-13" name="Hyewon Choi">
+						<img src="flags/flag-group-13/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-13/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-13/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-13/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-14" name="Junson Ko">
+						<img src="flags/flag-group-14/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-14/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-14/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-14/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-15" name="Libby Mars">
+						<img src="flags/flag-group-15/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-15/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-15/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-15/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-16" name="Niya Sun">
+						<img src="flags/flag-group-16/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-16/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-16/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-16/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-17" name="Xiomara España">
+						<img src="flags/flag-group-17/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-17/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-17/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-17/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-18" name="Yoon Kim">
+						<img src="flags/flag-group-18/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-18/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-18/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-18/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-19" name="Bobby Joe Smith III">
+						<img src="flags/flag-group-19/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-19/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-19/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-19/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-20" name="Caroline Smith">
+						<img src="flags/flag-group-20/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-20/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-20/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-20/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-21" name="Dawson">
+						<img src="flags/flag-group-21/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-21/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-21/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-21/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-22" name="Elena Foraker">
+						<img src="flags/flag-group-22/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-22/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-22/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-22/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-23" name="Emily Mahar">
+						<img src="flags/flag-group-23/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-23/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-23/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-23/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-24" name="Hilary DuPont">
+						<img src="flags/flag-group-24/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-24/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-24/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-24/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-25" name="Mukul Chakravarthi">
+						<img src="flags/flag-group-25/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-25/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-25/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-25/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-26" name="SC">
+						<img src="flags/flag-group-26/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-26/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-26/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-26/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-27" name="Tiger Dingsun">
+						<img src="flags/flag-group-27/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-27/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-27/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-27/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-28" name="Alex Rocha">
+						<img src="flags/flag-group-28/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-28/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-28/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-28/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-29" name="Cheyenne Kyle">
+						<img src="flags/flag-group-29/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-29/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-29/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-29/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-30" name="Damini Agrawal">
+						<img src="flags/flag-group-30/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-30/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-30/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-30/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-31" name="Erica S.">
+						<img src="flags/flag-group-31/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-31/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-31/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-31/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-32" name="G Cha">
+						<img src="flags/flag-group-32/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-32/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-32/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-32/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-33" name="Jeffery Tang">
+						<img src="flags/flag-group-33/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-33/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-33/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-33/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-34" name="Lisa Wang">
+						<img src="flags/flag-group-34/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-34/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-34/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-34/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-35" name="Minji Koo">
+						<img src="flags/flag-group-35/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-35/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-35/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-35/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-36" name="Minjun Choi">
+						<img src="flags/flag-group-36/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-36/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-36/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-36/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-37" name="Pooja Nitturkar">
+						<img src="flags/flag-group-37/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-37/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-37/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-37/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-38" name="Rory Hernandez-Romero">
+						<img src="flags/flag-group-38/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-38/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-38/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-38/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-39" name="RS">
+						<img src="flags/flag-group-39/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-39/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-39/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-39/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-40" name="Sally Park">
+						<img src="flags/flag-group-40/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-40/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-40/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-40/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-41" name="April Kim">
+						<img src="flags/flag-group-41/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-41/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-41/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-41/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-42" name="Chi Yang">
+						<img src="flags/flag-group-42/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-42/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-42/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-42/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-43" name="Felix Summ">
+						<img src="flags/flag-group-43/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-43/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-43/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-43/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-44" name="Jason Yuan">
+						<img src="flags/flag-group-44/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-44/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-44/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-44/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-45" name="Lulian Ahn">
+						<img src="flags/flag-group-45/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-45/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-45/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-45/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-46" name="Olivia Orr">
+						<img src="flags/flag-group-46/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-46/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-46/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-46/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-47" name="Pooja Cavale">
+						<img src="flags/flag-group-47/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-47/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-47/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-47/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-48" name="Qihang Li">
+						<img src="flags/flag-group-48/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-48/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-48/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-48/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-49" name="Tarelle Parker">
+						<img src="flags/flag-group-49/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-49/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-49/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-49/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-50" name="Tomiris Shyngyssova">
+						<img src="flags/flag-group-50/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-50/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-50/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-50/04.jpg" alt="" class="flag">
+					</div>
+
+					<div class="flag_group" id="flag-group-51" name="Yuanyu Li">
+						<img src="flags/flag-group-51/01.jpg" alt="" class="flag">
+						<img src="flags/flag-group-51/02.jpg" alt="" class="flag">
+						<img src="flags/flag-group-51/03.jpg" alt="" class="flag">
+						<img src="flags/flag-group-51/04.jpg" alt="" class="flag">
+					</div>
+
+				</div>
+			</section>
+		</div>
+	</section>
+
+<div class="wrapBack">
+	<div class="wrapper">
+
+		<div class="flagSmall">
+
+			<div class="bgCoverAni">
+				<div class="wavetext"></div>
+			</div>
+			<div id="map"></div>
+			<div id="pano"></div>
+
+			<div class="summary">
+				<p>
+					There are four unused flagpoles on the Providence River, located outside RISD’s Design Center. First-year students in RISD Graphic Design, who take courses that look out onto the public space, have come up with proposals for flags — symbols meant to galvanize the public in some aspect of its shared experience. The flags symbolize a range of the following: community, divergent or shared histories, civic pride, change/growth, hope (the state motto) or specific elements from the area or state. These designs are here to stir up a conversation with the City and to speak to the public in lieu of (and perhaps in advance of) printed flags. 
+				</p>
+			</div>
+			<div class="close"></div>
+		</div>
+
+	<div class="shoo"></div>
+
+<!-- 	<div class="uberButton"></div> -->
+
+	</div>
+</div>
+
+	<!--  	Wave Flag Text -->
+	<script>
+		var text = "CIVIC FLAG PROJECT";
+
+		for(var i in text) { 
+		  if(text[i] === " ") {
+		    $(".wavetext").append( $("<span>").html("&nbsp;") ); 
+		  } else {  
+		    $(".wavetext").append( $("<span>").text(text[i]) ); 
+		  }
+		}
+	</script>
+
+<!-- 	Google Maps Streetview -->
+	<script>
+		var map;
+		var panorama;
+		var panoramaService;
+		var streetView;
+		// var center = new google.maps.LatLng(41.82619254110408,-71.40912990564347);
+
+		function initialize() {
+			var fenway = {lat: 41.82619254110408, lng: -71.40912990564347};
+
+		    map = new google.maps.Map(
+		    document.getElementById('map'), {
+		        zoom: 5,
+		        // center: center,
+		        mapTypeId: google.maps.MapTypeId.ROADMAP
+		    });
+
+		    panoramaService = new google.maps.StreetViewService();
+
+		    var panoramaOptions = {
+		    	position: fenway,
+		        disableDefaultUI: true,
+		        pov: {
+		          heading: 274,
+		          pitch: 30
+		        }
+		    };
+
+		    panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), panoramaOptions);
+
+		    map.setStreetView(panorama);
+		    
+		    streetView = map.getStreetView();
+		    runPanoramaService();
+		}
+
+		function runPanoramaService() {
+		    panoramaService.getPanoramaByLocation(center,
+		    100,
+
+		    function (streetViewPanoramaData, streetViewStatus) {
+		        if (streetViewStatus == "OK") {
+		        
+		            streetView.setPosition(streetViewPanoramaData.location.latLng);
+		            streetView.setVisible(true);
+		        }
+		    });
+		}
+
+		initialize();
+	</script>
+
+	<!-- 	Google Maps API Key -->
+	<script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCud-0bNEwg_YnD4C-UUzBEXX7C9qHGNQ&callback=initialize">
+	</script>
+
+	<script src="scripts/scripts.js"></script>
+	<script src="scripts/flag.js"></script>
+
+</body>
+</html>

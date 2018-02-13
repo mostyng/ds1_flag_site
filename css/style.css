@@ -1,7 +1,7 @@
 body
 {
     overflow: hidden;
-    background: #000;
+    background: #111;
     color: white;
 }
 
@@ -10,6 +10,11 @@ body
     font-family: migrant;
 
     src: url('../fonts/migrant.otf');
+}
+
+.home:hover{
+    cursor: pointer;
+    color: yellow;
 }
 
 .flags_display
@@ -76,6 +81,7 @@ body
 
     /*background: url("../flags/1.png");*/
     background-size: cover;
+    background-color: #111;
 }
 
 .flag-two
@@ -88,6 +94,8 @@ body
 
     /* background: url("../flags/3.png");*/
      background-size: cover;
+     background-color: #111;
+
 }
 
 .flag-three
@@ -100,6 +108,8 @@ body
 
     /*background: url("../flags/2.png");*/
      background-size: cover;
+     background-color: #111;
+
 }
 
 .flag-four
@@ -112,6 +122,8 @@ body
 
     /*background: url("../flags/4.png");*/
      background-size: cover;
+     background-color: #111;
+
 }
 
 .flag_pole
@@ -123,7 +135,7 @@ body
     min-width: 5pt;
     min-height: 2000px;
 
-    color: black;
+    color: #111;
     border: none;
     background-color: white;
 }
@@ -152,9 +164,9 @@ flag thumbnail css
     /*margin-top: 2pt;*/
 
     border-top: solid;
-    border-top-width: 2pt;
+    border-top-width: 1pt;
     border-top-color: white;
-    background: black;
+    background: #111;
 }
 
 
@@ -179,7 +191,7 @@ flag thumbnail css
 
 .active
 {
-    background: black;
+    background: #111;
 }
 
 h5
@@ -200,7 +212,7 @@ h5
 
 .flag_group:hover
 {
-    background: white;
+    background: yellow;
 }
 
 .flag_thumbnails
@@ -252,11 +264,8 @@ flag animation
 
     -webkit-animation: slide 1.2s infinite linear;
 
-    background: url(../1.png) repeat round;
-    /*border-style: solid;
-    border-width: 6px 0 6px 0;
-    border-color: red;
-    box-sizing: border-box;*/
+    background: url(../flag_back_thiqr.svg) repeat round;
+    background-position: center center;
     background-color: transparent;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -317,5 +326,23 @@ flag animation
     {
         width: 20px;
         height: 13.2px;
+    }
+    .flag_pole
+    {
+        left: -9pt;
+
+        min-width: 3pt;
+        min-height: 2000px;
+    }
+    @-webkit-keyframes slide
+    {
+        from
+        {
+            background-position: 0 0;
+        }
+        to
+        {
+            background-position: 23vw 0;
+        }
     }
 }
