@@ -376,7 +376,7 @@ h5
 {
     display: inline-block;
 
-    padding: 4pt 7pt 5pt 7pt;
+    padding: 4pt 5pt 4pt 5pt;
 }
 
 .flag_group:hover
@@ -399,8 +399,8 @@ h5
 
 .flag
 {
-    width: 30px;
-    height: 20px;
+    width: 21px;
+    height: 14px;
 }
 
 
