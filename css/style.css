@@ -61,7 +61,7 @@ modal css
 
 .modal p{
     margin-bottom: 0;
-    font-size: 18pt;
+    font-size: 16pt;
 }
 
 .indent{
@@ -215,7 +215,7 @@ index css
 
     width: 19vw;
     height: 12.71vw;
-    margin-top: calc(100pt - (5vw));
+    margin-top: calc(80pt - (5vw));
     padding-left: 0;
 
     background-color: #111;
@@ -229,7 +229,7 @@ index css
 
     width: 19vw;
     height: 12.71vw;
-    margin-top: calc(200pt - (10vw));
+    margin-top: calc(180pt - (10vw));
 
     background-color: #111;
     /* background: url("../flags/3.png");*/
@@ -242,7 +242,7 @@ index css
 
     width: 19vw;
     height: 12.71vw;
-    margin-top: calc(300pt - (15vw));
+    margin-top: calc(280pt - (15vw));
 
     background-color: #111;
     /*background: url("../flags/2.png");*/
@@ -255,7 +255,7 @@ index css
 
     width: 19vw;
     height: 12.71vw;
-    margin-top: calc(400pt - (20vw));
+    margin-top: calc(380pt - (20vw));
 
     background-color: #111;
     /*background: url("../flags/4.png");*/
@@ -304,6 +304,7 @@ flag thumbnail css
     position: absolute;
     bottom: 0;
     left: 0;
+    position: fixed;
 }
 
 .flag_finder
@@ -467,11 +468,16 @@ flag animation
         font-size: 18pt;
     }
 
+    .name{
+        display: none;
+    }
+
     .flag-one
     {
         width: 22vw;
         height: 14.52vw;
         margin-top: calc(50pt - (5vw));
+        margin-left: 35px;
     }
 
     .flag-two
