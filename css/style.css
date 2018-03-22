@@ -170,11 +170,15 @@ index css
     right: 0;
     z-index: 4;
     text-transform: none;
-    width: 50%;
+    width: 60%;
 }
 
 .upperRight h1{
     padding: 14pt 18pt;
+}
+
+.flushRight{
+    text-align: right;
 }
 
 .flags
@@ -263,7 +267,7 @@ index css
 
     color: #111;
     border: none;
-    background-color: white;
+    background-color: #333;
 }
 
 .flag_pole
@@ -277,7 +281,12 @@ index css
 
     color: #111;
     border: none;
+    background-color: #333;
+}
+
+.whiten{
     background-color: white;
+    transition: 1s ease-in-out;
 }
 
 /*////////////////////////////////////

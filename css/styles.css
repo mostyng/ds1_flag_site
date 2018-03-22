@@ -125,8 +125,8 @@ body
       -moz-filter: blur(15px);
       -o-filter: blur(15px);
       -ms-filter: blur(15px);
-      transform: scale(1.1);
-*/      pointer-events: auto;
+*/      transform: scale(1.1);
+      pointer-events: auto;
 
 }
 

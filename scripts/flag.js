@@ -9,6 +9,8 @@ $(document).ready(function(){
 	$(".bottom").mouseenter(function(){isOnDiv=true;});
 	$(".bottom").mouseleave(function(){isOnDiv=false;});
 
+
+
 	$(".flag_group").click(function(){
 
 		$(".flag_group.active").removeClass('active');
@@ -53,5 +55,11 @@ $(document).ready(function(){
 			$("#myModal").hide();
 		}
 	}
+
+	$(".flag").click(function(){
+		$(".flag_pole").addClass("whiten");
+		$(".flag_pole_top").addClass("whiten");
+		$(".upperRight").addClass("flushRight");
+	});
 
 });
