@@ -9,13 +9,15 @@ $(document).ready(function(){
 	$(".location").toggleClass("appear");
 	});
 
-	$(".flagSmall").click(function(){
-	$(".wavetext").addClass("disappear");
-	$(".close").addClass("appear");
-	$(".summary").addClass("appear");
-	$(".shoo").show();
 
-	});
+	// $(".uberButton").click(function(){
+	// $(this).hide();
+	// $(".wavetext").addClass("disappear");
+	// $(".close").addClass("appear");
+	// $(".summary").addClass("appear");
+	// $(".shoo").show();
+
+	// });
 
 	$(".close").click(function(){
 	$(this).hide();
@@ -33,17 +35,6 @@ $(document).ready(function(){
 	$(".summary").hide();
 
 	});
-
-	// $(".home").click(function(){
-	// $(this).slideToggle("mobile");
-	// $(".flagSmall").slideToggle("goUp");
-	// $(".wrapper").slideToggle("goUp");
-	// $(".wrapBack").slideToggle("goUp");
-	// $(".wavetext").removeClass("disappear");
-	// $(".close").removeClass("appear");
-	// $("#map").removeClass("appear");
-	// $("#pano").removeClass("appear");
-	// });
 
 
 });

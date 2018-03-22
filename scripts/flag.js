@@ -2,12 +2,15 @@ $(document).ready(function(){
 
 	var toggle = true;
 	var isOnDiv = false;
+	var firstClick = false;
+
+
 
 	$(".bottom").mouseenter(function(){isOnDiv=true;});
 	$(".bottom").mouseleave(function(){isOnDiv=false;});
 
 	$(".flag_group").click(function(){
-		
+
 		$(".flag_group.active").removeClass('active');
 		$(this).addClass("active");
 
@@ -19,25 +22,36 @@ $(document).ready(function(){
 
 		$(".name_span").html(name);
 
-		// $(".flag-one").css("background", "url('flags/" + newFlags +  "/01.png')");
-		// $(".flag-two").css("background", "url('flags/" + newFlags + "/02.png')");
-		// $(".flag-three").css("background", "url('flags/" + newFlags + "/03.png')");
-		// $(".flag-four").css("background", "url('flags/" + newFlags + "/04.png')");
+		$(".flag-one > .flagContain").css("background", "url('flags/" + newFlags +  "/01.jpg')");
+		$(".flag-two > .flagContain").css("background", "url('flags/" + newFlags + "/02.jpg')");
+		$(".flag-three > .flagContain").css("background", "url('flags/" + newFlags + "/03.jpg')");
+		$(".flag-four > .flagContain").css("background", "url('flags/" + newFlags + "/04.jpg')");
 
-		$(".flag-one").css("background", "url('flags/" + newFlags +  "/01.jpg')");
-		$(".flag-two").css("background", "url('flags/" + newFlags + "/02.jpg')");
-		$(".flag-three").css("background", "url('flags/" + newFlags + "/03.jpg')");
-		$(".flag-four").css("background", "url('flags/" + newFlags + "/04.jpg')");
+		$(".flag-one > .flagContain").css({"background-size": "cover", "background-position": "center center", "background-repeat": "no-repeat"});
+		$(".flag-two > .flagContain").css({"background-size": "cover", "background-position": "center center", "background-repeat": "no-repeat"});
+		$(".flag-three > .flagContain").css({"background-size": "cover", "background-position": "center center", "background-repeat": "no-repeat"});
+		$(".flag-four > .flagContain").css({"background-size": "cover", "background-position": "center center", "background-repeat": "no-repeat"});
 
-		// $(".flag-one").css("background-size", "cover");
-		// $(".flag-two").css("background-size", "cover");
-		// $(".flag-three").css("background-size", "cover");
-		// $(".flag-four").css("background-size", "cover");
+		$(".flag-one > .flagContain").addClass("flagRaiseAnim");
+		$(".flag-two > .flagContain").addClass("flagRaiseAnim");
+		$(".flag-three > .flagContain").addClass("flagRaiseAnim");
+		$(".flag-four > .flagContain").addClass("flagRaiseAnim");
 
-		$(".flag-one").css({"background-size": "cover", "background-position": "center center", "background-repeat": "no-repeat"});
-		$(".flag-two").css({"background-size": "cover", "background-position": "center center", "background-repeat": "no-repeat"});
-		$(".flag-three").css({"background-size": "cover", "background-position": "center center", "background-repeat": "no-repeat"});
-		$(".flag-four").css({"background-size": "cover", "background-position": "center center", "background-repeat": "no-repeat"});
 
 	});
+
+	$(".name").click(function(){
+		$("#myModal").show();
+	});
+
+	$(".close").click(function(){
+		$("#myModal").hide();
+	});
+
+	window.onclick = function(event) {
+		if (event.target == document.getElementById('myModal')) {
+			$("#myModal").hide();
+		}
+	}
+
 });

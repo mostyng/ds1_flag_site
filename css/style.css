@@ -1,8 +1,29 @@
 body
 {
     overflow: hidden;
-    background: #111;
+
     color: white;
+    background: #111;
+}
+
+@keyframes flagAnim {
+    from {
+        -ms-transform: translate(0, 100vh); /* IE 9 */
+        -webkit-transform: translate(0, 100vh); /* Safari */
+        transform: translate(0, 100vh);;
+    }
+    to {
+        -ms-transform: translate(0px, 0px); /* IE 9 */
+        -webkit-transform: translate(0px, 0px); /* Safari */
+        transform: translate(0px, 0px);
+    }
+}
+
+.flagRaiseAnim
+{
+    animation-timing-function: ease-out;
+    animation-name: flagAnim;
+    animation-duration: 1.8s;
 }
 
 @font-face
@@ -12,23 +33,105 @@ body
     src: url('../fonts/migrant.otf');
 }
 
-.home:hover{
+/*
+modal css
+*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.modal p{
+    margin-bottom: 0;
+    font-size: 18pt;
+}
+
+.indent{
+    text-indent: 12%;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: yellow;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #000;
+    width: 60%; /* Could be more or less, depending on screen size */
+    height: auto;
+    max-height: 75%;
+    overflow-y: scroll;
+    color:black;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+
+    border-left: solid #000 1px;
+}
+::-webkit-scrollbar-thumb
+{
+    -webkit-border-radius: 0;
+    background: #000;
+
+}
+::-webkit-scrollbar-thumb:window-inactive
+{
+    border: solid #000 1px;
+    background: #fff;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
+}
+
+/*
+index css
+*/
+
+.home:hover
+{
+    cursor: pointer;
+
     color: yellow;
 }
+
 
 .flags_display
 {
     font-family: migrant;
 
-    padding: 10pt 14pt;
+    padding: 14pt 18pt;
 
     text-transform: uppercase;
+    max-width: 100%;
 }
 
 .flags_display h1
 {
-    font-size: 23pt;
+    font-size: 24pt;
 }
 
 .proposal
@@ -56,6 +159,24 @@ body
     cursor: pointer;
 }
 
+.name:hover{
+    color: yellow;
+}
+
+.upperRight{
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    text-transform: none;
+    width: 50%;
+}
+
+.upperRight h1{
+    padding: 14pt 18pt;
+}
+
 .flags
 {
     position: relative;
@@ -63,6 +184,14 @@ body
     display: flex;
 
     justify-content: space-around;
+}
+
+.descriptionModal
+{
+    width: 20vw;
+    height: 100vh;
+    background-color: white;
+    display: inline-block;
 }
 
 .flag_hero
@@ -79,9 +208,9 @@ body
     margin-top: calc(100pt - (5vw));
     padding-left: 0;
 
+    background-color: #111;
     /*background: url("../flags/1.png");*/
     background-size: cover;
-    background-color: #111;
 }
 
 .flag-two
@@ -92,10 +221,9 @@ body
     height: 12.71vw;
     margin-top: calc(200pt - (10vw));
 
+    background-color: #111;
     /* background: url("../flags/3.png");*/
-     background-size: cover;
-     background-color: #111;
-
+    background-size: cover;
 }
 
 .flag-three
@@ -106,10 +234,9 @@ body
     height: 12.71vw;
     margin-top: calc(300pt - (15vw));
 
+    background-color: #111;
     /*background: url("../flags/2.png");*/
-     background-size: cover;
-     background-color: #111;
-
+    background-size: cover;
 }
 
 .flag-four
@@ -120,10 +247,23 @@ body
     height: 12.71vw;
     margin-top: calc(400pt - (20vw));
 
+    background-color: #111;
     /*background: url("../flags/4.png");*/
-     background-size: cover;
-     background-color: #111;
+    background-size: cover;
+}
 
+.flag_pole_top
+{
+    position: absolute;
+    top: -1vw;
+    left: -11pt;
+    border-radius: 100%;
+    min-width: 12px;
+    min-height: 12px;
+
+    color: #111;
+    border: none;
+    background-color: white;
 }
 
 .flag_pole
@@ -189,6 +329,11 @@ flag thumbnail css
     text-align: center;
 }
 
+.proposalDisc
+{
+    transition: .3s;
+}
+
 .active
 {
     background: #111;
@@ -221,10 +366,11 @@ h5
     top: 0;
     left: 100pt;
 
-    cursor: pointer;
     display: inline-block;
 
     max-width: 90%;
+
+    cursor: pointer;
 }
 
 .flag
@@ -241,8 +387,8 @@ flag animation
 
 .flagContain
 {
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
 
     background-size: cover;
 }
@@ -265,8 +411,8 @@ flag animation
     -webkit-animation: slide 1.2s infinite linear;
 
     background: url(../flag_back_thiqr.svg) repeat round;
-    background-position: center center;
     background-color: transparent;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -286,7 +432,6 @@ flag animation
 }
 
 
-
 @media only screen and (max-width: 500px)
 {
     .flags_display h1
@@ -296,30 +441,30 @@ flag animation
 
     .flag-one
     {
-        margin-top: calc(50pt - (5vw));
         width: 22vw;
         height: 14.52vw;
+        margin-top: calc(50pt - (5vw));
     }
 
     .flag-two
     {
-        margin-top: calc(150pt - (10vw));
         width: 23vw;
         height: 15.18vw;
+        margin-top: calc(150pt - (10vw));
     }
 
     .flag-three
     {
-        margin-top: calc(250pt - (15vw));
         width: 23vw;
         height: 15.18vw;
+        margin-top: calc(250pt - (15vw));
     }
 
     .flag-four
     {
-        margin-top: calc(350pt - (20vw));
         width: 23vw;
         height: 15.18vw;
+        margin-top: calc(350pt - (20vw));
     }
 
     .flag
@@ -345,4 +490,10 @@ flag animation
             background-position: 23vw 0;
         }
     }
+    .modal-content {
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 10px;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height: auto;
+    max-height: 90%;
 }

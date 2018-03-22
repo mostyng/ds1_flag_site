@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1224 792" preserveAspectRatio="none"><defs><style>.cls-1{fill:#111;}</style></defs><title>flag_back_50</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M0,0"/><path class="cls-1" d="M0,0C306,0,306,33.32,612,33.32S918,0,1224,0H0Z"/><path class="cls-1" d="M0,0"/><path class="cls-1" d="M0,0C306,0,306,33.32,612,33.32S918,0,1224,0H0Z"/><path class="cls-1" d="M1224,758.68C918,758.68,918,792,612,792S306,758.68,0,758.68V792H1224V758.68"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1224 792" style="enable-background:new 0 0 1224 792;" xml:space="preserve" preserveAspectRatio="none">
+<style type="text/css">
+	.st0{fill:#111111;}
+</style>
+<title>flag_back_50</title>
+<g id="Layer_2">
+	<g id="Layer_1-2">
+		<path class="st0" d="M-1,0"/>
+		<path class="st0" d="M-1,0c306.5,0,306.5,33.3,613,33.3S918.5,0,1225,0H-1z"/>
+		<path class="st0" d="M-1,0"/>
+		<path class="st0" d="M-1,0c306.5,0,306.5,33.3,613,33.3S918.5,0,1225,0H-1z"/>
+		<path class="st0" d="M1225,758.7c-306.5,0-306.5,33.3-613,33.3S305.5,758.7-1,758.7V792h1226V758.7"/>
+	</g>
+</g>
+</svg>
