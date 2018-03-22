@@ -1,6 +1,7 @@
 body
 {
     overflow: hidden;
+    font-family: GT-Walsheim;
 
     color: white;
     background: #111;
@@ -28,9 +29,16 @@ body
 
 @font-face
 {
-    font-family: migrant;
+/*    font-family: migrant;
+    src: url('../fonts/migrant.otf');*/
+    font-family: 'GT-Walsheim';
+    src: url('../fonts/GT-Walsheim-Pro-Regular.otf');
 
-    src: url('../fonts/migrant.otf');
+}
+
+@font-face{
+    font-family: 'Austin';
+    src: url('../fonts/Austin-Medium.otf');
 }
 
 /*
@@ -41,7 +49,7 @@ modal css
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 10; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -111,6 +119,10 @@ modal css
 index css
 */
 
+.home{
+/*    font-family: Austin;*/
+}
+
 .home:hover
 {
     cursor: pointer;
@@ -121,8 +133,6 @@ index css
 
 .flags_display
 {
-    font-family: migrant;
-
     padding: 14pt 18pt;
 
     text-transform: uppercase;
@@ -136,7 +146,6 @@ index css
 
 .proposal
 {
-    font-family: migrant;
     line-height: 40px;
 
     max-width: 200px;
@@ -152,15 +161,6 @@ index css
     display: flex;
 
     justify-content: space-between;
-}
-
-.name
-{
-    cursor: pointer;
-}
-
-.name:hover{
-    color: yellow;
 }
 
 .upperRight{
@@ -179,6 +179,12 @@ index css
 
 .flushRight{
     text-align: right;
+    width: auto;
+    cursor: pointer;
+}
+
+.flushRight:hover{
+    color: yellow;
 }
 
 .flags
@@ -318,6 +324,15 @@ flag thumbnail css
     background: #111;
 }
 
+a{
+    color: yellow;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
 
 .flag_finder:hover
 {
@@ -440,6 +455,10 @@ flag animation
     }
 }
 
+@media only screen and (max-width: 800px)
+{
+
+}
 
 @media only screen and (max-width: 500px)
 {

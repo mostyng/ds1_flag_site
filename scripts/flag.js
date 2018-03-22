@@ -56,7 +56,7 @@ $(document).ready(function(){
 		}
 	}
 
-	$(".flag").click(function(){
+	$(".flag_group").click(function(){
 		$(".flag_pole").addClass("whiten");
 		$(".flag_pole_top").addClass("whiten");
 		$(".upperRight").addClass("flushRight");
