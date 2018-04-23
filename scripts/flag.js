@@ -56,10 +56,31 @@ $(document).ready(function(){
 		}
 	}
 
+	var flagDiscs = [
+	"DONT PUT ANYTHING HERE IT IS NOT IN USE YOU MUST LEAVE THE FIRST INDEX IN THE ARRAY BLANK",
+	"this is a discription",
+	"this is also discription",
+	"this is also discription",
+	"this is also discription"
+	]
+
 	$(".flag_group").click(function(){
 		$(".flag_pole").addClass("whiten");
 		$(".flag_pole_top").addClass("whiten");
 		$(".upperRight").addClass("flushRight");
+		
+		$('.modal').empty();
+
+		var id = $(this).attr("arrayIndex");
+		console.log(id);
+
+		if(id <= flagDiscs.length){
+			$('.modal').append('<div class="modal-content"><p>' + flagDiscs[id] + '</p></div>');
+		}else{
+			$('.modal').append('<div class="modal-content"><p>This proposal has no discription</p></div>');
+		}
+
 	});
+
 
 });
