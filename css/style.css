@@ -2,9 +2,13 @@ body
 {
     overflow: hidden;
     font-family: GT-Walsheim;
-
     color: white;
     background: #111;
+}
+
+::selection {
+  background: yellow; /* WebKit/Blink Browsers */
+  color: black;
 }
 
 @keyframes flagAnim {
