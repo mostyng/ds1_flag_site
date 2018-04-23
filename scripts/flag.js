@@ -40,6 +40,8 @@ $(document).ready(function(){
 		$(".flag-four > .flagContain").addClass("flagRaiseAnim");
 
 
+		$(".introduction").hide();
+
 	});
 
 	$(".name").click(function(){
@@ -58,8 +60,8 @@ $(document).ready(function(){
 
 	var flagDiscs = [
 	"DONT PUT ANYTHING HERE IT IS NOT IN USE YOU MUST LEAVE THE FIRST INDEX IN THE ARRAY BLANK",
-	"this is a discription",
-	"this is also discription",
+	"this is Carolyn's description",
+	"this is Ju Eun Jeon's description",
 	"this is also discription",
 	"this is also discription"
 	]
